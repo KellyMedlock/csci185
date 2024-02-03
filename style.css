@@ -1,28 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Strike&display=swap');
 
 * {
     box-sizing: border-box;
 }
+
 body {
-    margin: 60px;
+    margin: 0px;
     font-family: 'Arial bold', Helvetica, sans-serif;
-    background-color: darkslategray;
+    background-color: #c6f6ff;
 }
-p, a, li {
+
+p, li {
     line-height: 1.2em;
     font-size: 1.1em;
 }
+
 h1, h2 {
     font-family: 'Protest Strike', sans-serif;
     font-family: 'Protest Guerrilla', sans-serif;
     color: #BEC3D5;
 }
+
 h1.header {
-    font-size: 4.8em;
+    margin: 60px;
+    margin-top: 1px;
+    font-size: 5rem;
 }
+
 a {
     text-decoration: none;
     color: #BEC3D5;
 }
+
+a.tutorials:hover {
+    color: #91DB00;
+}
+
 a.homework:hover {
     color: #DB6300;
+}
+
+a.inspiration:hover {
+    color: #00B9DB;
+}
+
+a.exercises:hover {
+    color: #A600DB;
+}
+
+header {
+    line-height: 5.5cap;
+    padding-top: 1px;
+    background-color: #235F6A;
+    opacity: 80%;
+}
+
+main {
+    padding: 5px;
+    width: fit-content;
+    margin: 60px;
+    background-color: white;
 }
