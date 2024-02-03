@@ -15,10 +15,16 @@ p, li {
     font-size: 1.1em;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Protest Strike', sans-serif;
     font-family: 'Protest Guerrilla', sans-serif;
     color: #BEC3D5;
+}
+
+h1.main, h2 {
+    font-family: 'Protest Strike', sans-serif;
+    font-family: 'Protest Guerrilla', sans-serif;
+    color: rgb(22, 22, 22);
 }
 
 h1.header {
@@ -30,6 +36,10 @@ h1.header {
 a {
     text-decoration: none;
     color: #BEC3D5;
+}
+
+a.main {
+    color: rgb(22, 22, 22);
 }
 
 a.tutorials:hover {
