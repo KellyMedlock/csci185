@@ -12,8 +12,17 @@ p, a, li {
     font-size: 1.1em;
 }
 h1, h2 {
-    
     font-family: 'Protest Strike', sans-serif;
     font-family: 'Protest Guerrilla', sans-serif;
     color: #BEC3D5;
+}
+h1.header {
+    font-size: 4.8em;
+}
+a {
+    text-decoration: none;
+    color: #BEC3D5;
+}
+a.homework:hover {
+    color: #DB6300;
 }
