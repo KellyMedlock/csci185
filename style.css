@@ -30,7 +30,7 @@ h1.main, h2 {
 h1.header {
     margin: 60px;
     margin-top: 1px;
-    font-size: 475%;
+    font-size: 7vb;
 }
 
 a {
@@ -59,7 +59,7 @@ a.exercises:hover {
 }
 
 header {
-    line-height: 5.2cap;
+    line-height: 5.5vb;
     padding-top: 1px;
     background-color: #235F6A;
     opacity: 80%;
