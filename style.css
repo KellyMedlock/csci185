@@ -75,3 +75,19 @@ main {
 .mainheadr {
     margin-top: 0px;
 }
+
+.tactive {
+    color: #91DB00;
+}
+
+.hactive {
+    color: #DB6300;
+}
+
+.iactive {
+    color: #00B9DB;
+}
+
+.eactive {
+    color: #A600DB;
+}
