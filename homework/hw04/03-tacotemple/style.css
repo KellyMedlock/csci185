@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+section.card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid gray;
+    padding: 15px;   
+}
+
+section.card img {
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+}
