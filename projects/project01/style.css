@@ -1,0 +1,18 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6987F0;
+    color: #E6FFFF;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
