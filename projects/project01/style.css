@@ -1,86 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-/* Main Body Rules */
-* {
+body * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #6987F0;
-    color: #E6FFFF;
-    margin: 0 auto;
-    max-width: 1024px;
-    font-family: "Kanit";
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    font-family: 'Courier New', Courier, monospace;
 }
-/* Main Body Rules */
 
-
-/* Navigation Styleing */
-nav li {
-    display: inline;
-    padding: 2px;
-    border: 1px solid black;
-    margin-right: 5px;
+header {
+    padding: 1vh 2vh;
+    min-height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
 }
+
+nav {
+    grid-area: 2 / 2 / 3 / span 3;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.nav {
+    font-size: 12px;
+    grid-area: 1 / 1 / 2 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.navbutton1 {
+    /* border: 1px solid black; */
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbutton2 {
+    /* border: 1px solid black; */
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbutton3 {
+    /* border: 1px solid black; */
+    grid-area: 3 / 3 / 4 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.search {
+    grid-area: 2 / 6 / 3 / 7;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.logo {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
 
 nav a:link {
+    color: black;
     text-decoration: none;
-    font-size: 16px;
-    line-height: 24px;
-    color: #E6FFFF;
-}
-
-nav a:visited {
-    color: #E6FFFF;
+    font-size: 120%;
 }
 
 nav a:hover {
-    font-size: 18px;
-}
-
-nav a:active {
-    color: red;
-}
-/* Navigation Styleing */
-
-
-/* Page Layout */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-}
-
-.header {
-    grid-column: 1 / span 3;
-}
-
-.main {
-    grid-column: 1 / span 3;
-}
-
-.footer {
-    grid-column: 1 / span 3;
-}
-
-.cards {
     border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 24px;
-}
-
-.card1 {
-    border: 1px solid black;
-    grid-column: 1 / span 1;
-}
-
-.card2 {
-    border: 1px solid black;
-    grid-column: 2 / span 1;
-}
-
-.card3 {
-    border: 1px solid black;
-    grid-column: 3 / span 1;
 }
