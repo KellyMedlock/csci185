@@ -59,7 +59,7 @@ main {
 
 nav {
     grid-area: 2 / 2 / 3 / span 3;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
