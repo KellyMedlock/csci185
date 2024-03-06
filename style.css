@@ -30,7 +30,7 @@ h1.main, h2 {
 h1.header {
     margin: 0;
     padding: 5px;
-    font-size: 7vb;
+    font-size: 6vb;
 }
 
 a {
@@ -60,6 +60,10 @@ a.exercises:hover {
 
 a.quizzes:hover {
     color: #DB0200;
+}
+
+a.projects:hover {
+    color: #91DB00;
 }
 
 header {
@@ -98,4 +102,8 @@ main {
 
 .qactive {
     color: #DB0200;
+}
+
+.pactive {
+    color: #91DB00;
 }
