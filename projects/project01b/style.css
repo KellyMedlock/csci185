@@ -56,6 +56,7 @@ main {
     overflow: hidden;
     display: flex;
     align-items: center;
+    border: 4px solid cornflowerblue;
 }
 
 nav {
@@ -114,6 +115,8 @@ nav a:visited {
 
 nav a:hover {
     border: 1px solid black;
+    font-size: 200%;
+    color: white;
 }
 
 @media (max-width: 720px) {
