@@ -11,15 +11,24 @@ function setup() {
         * Draw some abstract art
     */
 
-    // https://p5js.org/reference/#/p5/circle
-    fill("teal")
-    circle(550, 100, 100);
+    fill("yellow");
+    noStroke();
+    circle(900, 450, 250);
+    
+    fill('black');
+    stroke('black')
+    circle(850, 410, 55);
+
+    fill('black');
+    circle(950, 410, 55);
+
+    fill('black');
+    arc(900, 490, 125, 95, 0, PI);
 
     // https://p5js.org/reference/#/p5/rect
-    fill('hotpink')
-    rect(30, 20, 55, 55);
 
-    // add your drawing here:
+    // https://p5js.org/reference/#/p5/circle
+    
     // https://p5js.org/reference/#/p5/point
     // point(110, 20);
 
@@ -38,5 +47,5 @@ function setup() {
 
 
     // for debugging:
-    drawGrid(canvasWidth, canvasHeight)
+    // drawGrid(canvasWidth, canvasHeight)
 }
