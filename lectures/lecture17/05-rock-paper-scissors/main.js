@@ -17,7 +17,11 @@ function displayResult(player, computer) {
     // logic here to figure out who won!
     resultDiv.innerHTML = "Your task: Figure out who won!";
     // add your code here:
-
+    if (player === computer) {
+        resultDiv.innerHTML = "It's a tie!!"
+    } else if (player === rock && computer === scissors) {
+        resultDiv.innerHTML = "You Win!!"
+    }
 
 
 
