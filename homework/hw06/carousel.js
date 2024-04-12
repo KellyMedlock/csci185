@@ -20,40 +20,29 @@ let idx = 0;
 function showImage() {
     const currentphoto = document.querySelector("img");
     const caption = document.querySelector(".caption");
+    currentphoto.src = photos[idx];
 
-    if (idx === 0) {
-        currentphoto.src = "images/img1-600x400.jpg";
+    if (idx === 0) { 
         caption.innerHTML = "Image 1 of 10";
-    } else if (idx === 1) {
-        currentphoto.src = "images/img2-600x400.jpg";
+    } else if (idx === 1) {    
         caption.innerHTML = "Image 2 of 10";
-    } else if (idx === 2) {
-        currentphoto.src = "images/img3-600x400.jpg";
+    } else if (idx === 2) {        
         caption.innerHTML = "Image 3 of 10";
-    } else if (idx === 3) {
-        currentphoto.src = "images/img4-600x400.jpg";
+    } else if (idx === 3) {       
         caption.innerHTML = "Image 4 of 10";
-    } else if (idx === 4) {
-        currentphoto.src = "images/img5-600x400.jpg";
+    } else if (idx === 4) {        
         caption.innerHTML = "Image 5 of 10";
-    } else if (idx === 5) {
-        currentphoto.src = "images/img6-600x400.jpg";
+    } else if (idx === 5) {        
         caption.innerHTML = "Image 6 of 10";
-    } else if (idx === 6) {
-        currentphoto.src = "images/img7-600x400.jpg";
+    } else if (idx === 6) {        
         caption.innerHTML = "Image 7 of 10";
-    } else if (idx === 7) {
-        currentphoto.src = "images/img8-600x400.jpg";
+    } else if (idx === 7) {        
         caption.innerHTML = "Image 8 of 10";
-    } else if (idx === 8) {
-        currentphoto.src = "images/img9-600x400.jpg";
+    } else if (idx === 8) {       
         caption.innerHTML = "Image 9 of 10";
     } else if (idx === 9) {
-        currentphoto.src = "images/img10-600x400.jpg";
         caption.innerHTML = "Image 10 of 10";
     }
-
-    console.log('Show image');
 }
 
 
@@ -71,8 +60,6 @@ function forward() {
     }
 
     showImage();
-
-    console.log('forward');
 }
 
 
@@ -90,6 +77,4 @@ function back() {
     }
 
     showImage();
-
-    console.log('back');
 }
