@@ -1,7 +1,7 @@
 const containerEl = document.querySelector("#output_container");
 
 async function showSong() {
-    const searchTerm = "Bob Dylan";
+    const searchTerm = "Mersiv";
     const url = `https://www.apitutor.org/spotify/simple/one/v1/search?q=${searchTerm}&type=track`;
     const response = await fetch(url);
     const song = await response.json();
