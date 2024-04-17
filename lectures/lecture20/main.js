@@ -1,7 +1,9 @@
+let data;
+
 // ignore this function for now. We'll go over it
 // on Wednesday: 
 async function fetchCourses() {
-    const url = `https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2023/fall/`;
+    const url = `https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2024/fall/`;
     data = await fetch(url).then(response => response.json());
 } 
 fetchCourses();
