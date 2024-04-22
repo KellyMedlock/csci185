@@ -1,20 +1,22 @@
+const box = document.querySelector("#box")
+
 function makeRed() {
-    // your code here...
+    box.style.backgroundColor = "red";
     console.log('Change the box\'s background color to red');
 }
 
 function makeBlue() {
-    // your code here...
+    box.style.backgroundColor = "blue";
     console.log('Change the box\'s background color to blue');
 }
 
 function makePink() {
-    // your code here...
+    box.style.backgroundColor = "pink";
     console.log('Change the box\'s background color to pink');
 }
 
 function makeOrange() {
-    // your code here...
+    box.style.backgroundColor = "orange";
     console.log('Change the box\'s background color to orange');
 }
 
