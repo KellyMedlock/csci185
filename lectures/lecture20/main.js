@@ -29,4 +29,16 @@ fetchCourses();
 function search() {
     console.log(data);
     const searchTerm = document.querySelector('#search_term').value;
+    const container = document.querySelector(".courses");
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].Department === searchTerm) {
+            console.log(data[i].Title);
+        }
+    };
+    
+    // container.insertAdjacentHTML('beforeend', `<p>${data[0].Title}</p>`);
+
+    // console.log(data[0].Title);
+    // console.log(data[0].Instructors[0].Name);
+
 }
