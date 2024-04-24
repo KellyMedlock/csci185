@@ -32,7 +32,14 @@ function search() {
     const container = document.querySelector(".courses");
     for (let i = 0; i < data.length; i++) {
         if (data[i].Department === searchTerm) {
-            console.log(data[i].Title);
+            const template = `<section class="course">
+                                  <h2>${data[i].Code}: ${data[i].Title}</h2>
+                                  <p>
+                                      ${data[i].Days} &bull; ${data[i].Location.FullLocation} &bull; ${data[i].Hours} credit hour(s)
+                                  </p>
+                                  <p><strong>${data[i].Instructors[0].Name}</strong></p>
+                              </section>`;            
+            container.insertAdjacentHTML("beforeend", template);
         }
     };
     
