@@ -14,8 +14,9 @@ function search (ev) {
 }
 
 async function getArtist (term) {
+    const url = `${baseURL}?type=artist&q=${term}&limit=1`;
     const artistCard = document.querySelector("#artist");
-    const responseArtist = await fetch(`https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`);
+    const responseArtist = await fetch(url);
     const artistSearch = await responseArtist.json();
     // console.log(artistSearch[0]);
     
@@ -38,8 +39,9 @@ async function getArtist (term) {
 }
 
 async function getAlbums (term) {
+    const url = `${baseURL}?type=album&q=${term}&limit=10`;
     const albumCard = document.querySelector("#albums");
-    const responseAlbum = await fetch(`https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`);
+    const responseAlbum = await fetch(url);
     const albumSearch = await responseAlbum.json();
     // console.log(albumSearch);
 
@@ -64,8 +66,9 @@ async function getAlbums (term) {
 }
 
 async function getTracks (term) {
+    const url = `${baseURL}?type=track&q=${term}&limit=5`;
     const trackCard = document.querySelector("#tracks");
-    const responseTrack = await fetch(`https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`);
+    const responseTrack = await fetch(url);
     const trackSearch = await responseTrack.json();
     // console.log(trackSearch);
 
