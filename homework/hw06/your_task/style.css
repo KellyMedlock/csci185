@@ -364,7 +364,7 @@ footer .track-item:hover {
 	outline: none;
     background: transparent;
     font: 1em/1 arial, sans-serif;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     width: 100%;
 }
 input[type=range]::-moz-range-track {
