@@ -25,7 +25,7 @@ async function getArtist (term) {
     } else {
         artistCard.innerHTML = `<section class="artist-card" id="${artistSearch[0].id}">
                                     <div>
-                                        <img src="${artistSearch[0].image_url}">
+                                        <img src="${artistSearch[0].image_url}" alt="Image of ${artistSearch[0].name}">
                                         <h2>${artistSearch[0].name}</h2>
                                         <div class="footer">
                                             <a href="${artistSearch[0].spotify_url}" target="_blank">
@@ -55,7 +55,7 @@ async function getAlbums (term) {
         for (let i = 0; i < 10; i++) {
             albumCard.insertAdjacentHTML("beforeend", `<section class="album-card" id="${albumSearch[i].id}">
                                         <div>
-                                            <img src="${albumSearch[i].image_url}">
+                                            <img src="${albumSearch[i].image_url}" alt="album cover for ${albumSearch[i].name}">
                                             <h2>${albumSearch[i].name}</h2>
                                             <div class="footer">
                                                 <a href="${albumSearch[i].spotify_url}" target="_blank">
@@ -84,9 +84,9 @@ async function getTracks (term) {
         trackCard.insertAdjacentHTML('beforeend', '<section class="track-item preview"><p>No tracks found that match your search criteria</p></section');
     } else {
         for (let i = 0; i < 5; i++) {
-            trackCard.insertAdjacentHTML("beforeend", `<section class="track-item preview">
-                                                            <img src="${trackSearch[i].album.image_url}">
-                                                            <i class="fas play-track fa-play" aria-hidden="true" onclick=listenTrack()></i>
+            trackCard.insertAdjacentHTML("beforeend", `<section class="track-item preview" onclick="listenTrack('${trackSearch[i].id}')" aria-label="play track button">
+                                                            <img src="${trackSearch[i].album.image_url}" alt="album cover for ${trackSearch[i].name}">
+                                                            <i class="fas play-track fa-play" aria-hidden="true"></i>
                                                             <div>
                                                                 <h2>${trackSearch[i].name}</h2>
                                                                 <p>
@@ -123,6 +123,17 @@ function clearSearch() {
     trackCard.innerHTML = "";
 }
 
-function listenTrack() {
-    const 
+async function listenTrack(trackId) {
+    const nowPlaying = document.querySelector("#artist-section h1");
+    const iFrame = document.querySelector("#artist");
+
+    nowPlaying.innerHTML = "Now Playing";
+    iFrame.innerHTML = `<iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/${trackId}?utm_source=generator&theme=0" 
+    width="100%" 
+    height="352" 
+    frameBorder="0" 
+    allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>`;
 }
